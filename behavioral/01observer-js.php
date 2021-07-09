@@ -26,7 +26,7 @@
 		this.observers[key] = value
 	}
 	select.detachObserver = function(key){
-		delete observers[key]
+		delete this.observers[key]
 	}
 	select.onchange = function(){
 		for(var key in this.observers){
